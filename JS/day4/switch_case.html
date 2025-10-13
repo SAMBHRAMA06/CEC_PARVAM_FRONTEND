@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Switch case</h1>
+    <script>
+        const add = (a, b) => {
+            console.log("Add: ", a + b);
+        }
+        const sub = (a, b) => {
+            console.log("Sub: ", a - b);
+        }
+        const mul = (a, b) => {
+            console.log("Mul: ", a * b);
+        }
+        const div = (a, b) => {
+            console.log("Div: ", a / b);
+        }
+        const mod = (a, b) => {
+            console.log("Mod: ", a % b);
+        }
+        const f = (a)=>
+        {
+            let b=1
+            for (i=1;i<=a;i++){
+                b=b*i
+
+            }
+            console.log('fact of number:',b)
+        }
+
+        console.log("1. Add");
+        console.log("2. Sub");
+        console.log("3. Mul");
+        console.log("4. Div");
+        console.log("5. Mod");
+        console.log("6. Fact");
+        let number = +prompt("Enter the number:");
+        let num1 = 20;
+        let num2 = 10;
+        if (number < 1 || number > 6) {
+            alert("Invalid Choice");
+        }
+        else {
+            console.log("number: ", number);
+            switch (number) {
+                case 1: {
+                    add(num1, num2);
+                    break;
+                }
+                case 2: {
+                    sub(num1, num2);
+                    break;
+                }
+                case 3: {
+                    mul(num1, num2);
+                    break;
+                }
+                case 4: {
+                    div(num1, num2);
+                    break;
+                }
+                case 5: {
+                    mod(num1, num2);
+                    break;
+                }
+                case 6:{
+                    f(num1);
+                    f(num2);
+                    break;
+                }
+                default: {
+                    console.log("Invalid Choice");
+                }
+            }
+        }
+
+    </script>
+</body>
+
+</html>
