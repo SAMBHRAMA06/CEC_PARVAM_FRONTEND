@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript object notation</h1>
+    <p>it does not contain functions</p>
+    <p>it stores everything in the form of string or double quotes except numbers and boolean  value</p>
+    <p>api=application programming interface</p>
+    <script>
+        let obj1 = {
+            FirstName : "Sambhrama",
+            LastName : "B S",
+            Age : 18 ,
+            email: "Sambhrama@.com",
+        }
+        console.log("obj1:",obj1);
+        console.log("type of obj1:",typeof obj1);
+        
+        let str1 = JSON.stringify(obj1);
+        console.log("str1:",str1);
+        console.log("type of str1:",typeof str1);
+
+        let obj2 = JSON.parse(str1);
+        console.log("obj2:",obj2);
+        console.log("type of obj2:",typeof obj2);
+    </script>
+</body>
+</html>
+
