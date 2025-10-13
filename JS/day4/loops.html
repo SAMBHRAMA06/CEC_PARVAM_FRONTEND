@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>loops in html</h1>
+    <pre>
+    1.for loop
+    2.for of loop
+    3.for in loop
+    4.for each loop
+    5.while loop
+    6.do while loop
+    </pre>
+    <script>
+        const fruits = ["Apple", "Banana", "Cherry"];
+        for (let i = 0; i < fruits.length; i++) {
+        console.log("Fruit at index ${i}: ${fruits[i]}");
+        }
+
+        const colors = ["Red", "Green", "Blue"];
+        for (const color of colors) {
+        console.log("Color: ${color}");
+        }
+
+        const person = {
+        name: "Alice",
+        age: 30,
+        city: "New York"
+        };
+        for (const key in person) {
+        console.log(`${key}: ${person[key]}`);
+        }
+
+        const numbers = [10, 20, 30];
+        numbers.forEach(function(number, index) {
+        console.log("Element at index ${index} is ${number}");
+        });
+
+        let count = 0;
+        const limit = 3;
+        while (count < limit) {
+        console.log("Current count: ${count}");
+        count++; // Important: increment the variable
+        }
+
+        let i = 0;
+        do {
+        console.log(`The value of i is: ${i}`);
+        i++;
+        } while (i < 0); 
+    </script>
+</body>
+</html>
