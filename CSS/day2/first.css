@@ -1,0 +1,28 @@
+.link
+{
+    text-decoration: none;
+    color: blue;
+    background-color: lightskyblue;
+     margin-left: 20px;
+    padding-left: 20px;
+}   
+body
+{
+    font-family: Arial, sans-serif;
+    background-color: lightgrey;
+}
+#para2
+{
+    font-size: 30px;
+    color: yellow;
+    background-color: grey;
+    border: 1px solid rgb(71, 9, 9);
+    margin-left: 20px;
+    padding-left: 20px;
+}
+#para3
+{
+    margin: 40px;
+    border: 20px solid rgb(71, 9, 9);
+    padding: 20px;
+}
