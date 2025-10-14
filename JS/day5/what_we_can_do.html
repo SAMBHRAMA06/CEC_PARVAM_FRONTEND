@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>1. We can change the content of html</p>
+    <h1 id="title">Hello, World!</h1>
+    <button type="button" onclick="document.getElementById('title').innerText='Text changes using js'">Change the content of h1</button>
+
+    <p>2. We can change the html attributes</p>
+    <img id="bulb" src="./off.png" alt="off">
+    <button type="button" onclick="document.getElementById('bulb').src='./on.png'">Turn ON</button>
+    <button type="button" onclick="document.getElementById('bulb').src='./off.png'">Turn OFF</button>
+
+    <p>3. We can change the css style</p>
+    <div id="desc">Lorem, ipsum dolor.</div>
+    <button onclick="document.getElementById('desc').style.backgroundColor='aqua'">change the backgroundColor</button>
+    
+    <p>4. We can hide the html elements</p>
+    <h3 id="title3" >Lorem ipsum dolor sit.</h3>
+    <button onclick="document.getElementById('title3').style.display='none'">Hide Element</button>
+
+    <p>5. We can show the html elements</p>
+    <h2 id="heading_2" style="display:none;">Lorem ipsum dolor sit.</h2>
+    <button onclick="document.getElementById('heading_2').style.display='block'">Show Element</button>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive DOM Demo</title>
+</head>
+<body>
+    <p>1. Update heading dynamically</p>
+    <h1 id="title">Welcome to My Page!</h1>
+    <button type="button" onclick="document.getElementById('title').innerText='Heading updated via JavaScript!'">
+        Update Heading
+    </button>
+
+    <p>2. Toggle image source</p>
+    <img id="weather" src="./cloudy.jpg" alt="Cloudy weather">
+    <button onclick="document.getElementById('weather').src='./sunny.jpg'">Make Sunny</button>
+    <button onclick="document.getElementById('weather').src='./cloudy.jpg'">Make Rainy</button>
+
+    <p>3. Apply style changes</p>
+    <div id="desc" style="padding: 10px;">Click the button to change my style!</div>
+    <button onclick="document.getElementById('desc').style.backgroundColor='lightgreen'">
+        Change Background Color
+    </button>
+
+    <p>4. Hide this message</p>
+    <h3 id="title3">This message will disappear when you click the button.</h3>
+    <button onclick="document.getElementById('title3').style.display='none'">Hide Message</button>
+
+    <p>5. Reveal hidden content</p>
+    <h2 id="heading_2" style="display:none;">Surprise! You found the hidden message.</h2>
+    <button onclick="document.getElementById('heading_2').style.display='block'">Show Message</button>
+</body>
+</html>
