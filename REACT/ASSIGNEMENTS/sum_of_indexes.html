@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Digits at Odd Indexes</title>
+</head>
+<body>
+    <script>
+        // Define the number
+        let num = 543216; // You can change this number
+
+        // Convert number to string to access digits by index
+        let numStr = num.toString();
+
+        let sum = 0;
+
+        // Loop through each digit
+        for (let i = 0; i < numStr.length; i++) {
+            // Check if index is odd
+            if (i % 2 !== 0) {
+                sum += parseInt(numStr[i]);
+            }
+        }
+
+        console.log("Sum of digits at odd indexes in", num, "is:", sum);
+    </script>
+</body>
+</html>

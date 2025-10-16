@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Factorial of a number using Recursion</h1>
+    <p>n! = n * (n-1)!</p>
+    <p>Example: 3! = 3 * 2 * 1</p>
+
+    <script>
+        // Recursive function to calculate factorial
+        const fact = (num) => {
+            if (num === 0 || num === 1) {
+                return 1;
+            } else {
+                return num * fact(num - 1);
+            }
+        }
+
+        let num = 5;
+        console.log("Factorial of", num, "is:", fact(num));
+
+        let num2 = 7;
+        console.log("Factorial of", num2, "is:", fact(num2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <script>
+        // Ask the user to enter a number
+        let num = prompt("Enter a number:");
+
+        // Reverse the number by:
+        // 1. Splitting it into characters
+        // 2. Reversing the array
+        // 3. Joining it back into a string
+        let reversed = num.split('').reverse().join('');
+
+        // Check if the original and reversed strings are the same
+        if (num === reversed) {
+            console.log(num + " is a palindrome!");
+        } else {
+            console.log(num + " is not a palindrome.");
+        }
+    </script>
+</body>
+</html>

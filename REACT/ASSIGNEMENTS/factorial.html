@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Factorial of a number</h1>
+    <p>p*(n-1)!</p>
+    <p>3! = 3*2*1!</p>
+    <script>
+
+        const fact = (num) => {
+            let res =1;
+            for (let i=1; i <=num ; i++){
+                res = res * i;
+            }
+            console.log("fact:", res);
+        }
+        let num = 5;
+        fact(num);
+
+        let num2 = 7;
+        fact(num2);
+    </script>
+</body>
+</html>

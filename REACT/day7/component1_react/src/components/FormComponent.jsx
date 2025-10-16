@@ -13,5 +13,5 @@ export default function FormComponent() {
             />
         </form>
     </div>
-  )
+  );
 }
