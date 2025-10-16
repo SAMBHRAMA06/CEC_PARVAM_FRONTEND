@@ -11,7 +11,7 @@ function App() {
     <>
     this is app.jsx
     <ButtonComponents />
-    <FormComponents />
+    <FormComponents text={"hello there" } value={111} arr={[1,2,3]}/>
     <OrderedComponent/>
     <UndodredComponenet/>
 

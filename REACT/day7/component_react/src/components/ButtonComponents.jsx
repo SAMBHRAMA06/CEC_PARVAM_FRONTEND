@@ -1,5 +1,5 @@
 import React from 'react'
-import FormComponents from './FormComponent'
+import FormComponents from './FormComponents'
 
 export default function ButtonComponents() {
   return (
