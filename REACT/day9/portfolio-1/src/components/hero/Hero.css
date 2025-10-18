@@ -1,0 +1,162 @@
+/* src/components/Hero/Hero.css */
+
+.hero {
+    /* Mapped to d-flex, align-items-center, flex-column */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px; /* Custom spacing */
+}
+
+.hero img {
+    /* Custom margin */
+    margin-top: 80px;
+    /* You could also add a class like 'img-fluid' in JSX to ensure responsiveness */
+}
+
+.hero h1 {
+    /* Mapped to text-center, w-75 (roughly) */
+    text-align: center;
+    width: 70%; 
+    font-size: 60px; /* Custom font size */
+    font-weight: 600; /* Mapped to fw-semibold */
+}
+
+.hero h1 span {
+    /* Gradient text is custom and has no direct BS equivalent */
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    /* Mapped to w-50 (roughly), text-center */
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.hero-action {
+    /* Mapped to d-flex, align-items-center, gap-3 (roughly) */
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px; /* Custom margin, roughly mb-5 */
+}
+
+.hero-connect {
+    /* Mapped to p-4 (roughly), rounded-pill */
+    padding: 25px 45px;
+    border-radius: 50px; /* Standardized by rounded-pill in JSX */
+    background: linear-gradient(264deg, #DF8908 -5.9%, #B415FF 100%);
+    cursor: pointer;
+}
+
+.hero-resume {
+    /* Mapped to p-4 (roughly), rounded-pill, border-white */
+    padding: 25px 75px;
+    border-radius: 50px; /* Standardized by rounded-pill in JSX */
+    border: 2px solid #FFF; /* Mapped to border border-white */
+    cursor: pointer;
+}
+
+.hero-connect:hover {
+    /* Custom hover effect */
+    border: 2px solid white;
+}
+
+.hero-resume:hover {
+    /* Custom hover effect */
+    border-color: #B415FF;
+}
+
+
+/* ===== Responsive Design ===== */
+
+/* For tablets and small laptops (<= 1024px) */
+@media (max-width: 1024px) {
+    .hero h1 {
+        width: 85%; /* Mapped to w-85 (if custom utility existed) */
+        font-size: 48px;
+    }
+
+    .hero p {
+        width: 70%; /* Mapped to w-75 (roughly) */
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .hero-action {
+        font-size: 20px;
+    }
+
+    .hero-connect,
+    .hero-resume {
+        padding: 20px 40px;
+    }
+}
+
+/* For mobile devices (<= 768px) */
+@media (max-width: 768px) {
+    .hero {
+        gap: 25px;
+    }
+
+    .hero img {
+        width: 200px;
+        margin-top: 50px;
+    }
+
+    .hero h1 {
+        width: 90%; /* Mapped to w-100 (if you want full width) */
+        font-size: 34px;
+        line-height: 45px;
+    }
+
+    .hero p {
+        width: 85%; /* Mapped to w-85 */
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .hero-action {
+        /* Mapped to flex-column */
+        flex-direction: column;
+        gap: 15px; /* Mapped to gap-3 */
+        font-size: 18px;
+        margin-bottom: 40px;
+    }
+
+    .hero-connect,
+    .hero-resume {
+        /* Mapped to w-80 (if custom utility existed), text-center */
+        width: 80%;
+        text-align: center;
+        padding: 18px 0;
+        border-radius: 40px;
+    }
+}
+
+/* For very small phones (less than 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .hero-connect,
+    .hero-resume {
+        width: 90%;
+        font-size: 16px;
+        padding: 15px 0;
+    }
+}

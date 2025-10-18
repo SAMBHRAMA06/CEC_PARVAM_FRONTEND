@@ -1,0 +1,161 @@
+/* src/components/MyWork/Mywork.css */
+
+.mywork {
+    /* Mapped to d-flex, flex-column, align-items-center, justify-content-center */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px; /* Custom spacing */
+    margin: 80px 70px; /* Custom spacing */
+}
+
+.mywork-title {
+    /* Mapped to position-relative, text-center */
+    position: relative;
+    text-align: center;
+}
+
+.mywork-title h1 {
+    /* Custom padding and font size/weight (use fw-semibold or fw-bold for utility) */
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600; 
+}
+
+.mywork-title img {
+    /* Mapped to position-absolute, top-0 (adjusted), right-0, z-index-n1 */
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: -1;
+}
+
+.mywork-container {
+    /* Custom grid is used, but this is the container for the grid */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Equivalent to Bootstrap grid row with 3 cols (col-lg-4) */
+    gap: 40px; /* Custom gap, roughly gap-4 or gap-5 */
+}
+
+.mywork-container img {
+    /* Mapped to img-fluid, object-fit utilities (custom in BS) */
+    box-sizing: border-box;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    transition: 0.3s;
+    cursor: pointer;
+    object-fit: cover; /* Important for retaining aspect ratio in the fixed height */
+}
+
+.mywork-container img:hover {
+    /* Custom hover effects */
+    transform: scale(1.10);
+    border: 4px solid #ff00ff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.mywork-showmore {
+    /* Mapped to d-flex, align-items-center, justify-content-center, rounded-pill */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 50px; /* Standardized by rounded-pill in JSX */
+    border: 2px solid white;
+    padding: 20px 40px; /* Custom padding, roughly p-4 */
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.mywork-showmore:hover {
+    /* Custom hover effect */
+    gap: 30px;
+    transition: 0.6s;
+}
+
+/* ----------------------- */
+/* 📱 Responsive Design */
+/* ----------------------- */
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+    .mywork {
+        margin: 60px 40px;
+        gap: 60px;
+    }
+
+    .mywork-title h1 {
+        font-size: 60px;
+    }
+
+    .mywork-container {
+        /* Grid changes to 2 columns, corresponding to col-md-6 */
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .mywork-container img {
+        height: 220px;
+    }
+
+    .mywork-showmore {
+        padding: 18px 35px;
+        font-size: 20px;
+    }
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+    .mywork {
+        margin: 40px 20px;
+        gap: 40px;
+    }
+
+    .mywork-title h1 {
+        font-size: 45px;
+        padding: 0;
+    }
+
+    .mywork-title img {
+        top: 40px;
+        width: 100px;
+    }
+
+    .mywork-container {
+        /* Grid changes to 1 column, corresponding to col-12 */
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .mywork-container img {
+        height: 200px;
+    }
+
+    .mywork-showmore {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+    .mywork-title h1 {
+        font-size: 36px;
+    }
+
+    .mywork-container img {
+        height: 180px;
+    }
+
+    .mywork-showmore {
+        padding: 12px 25px;
+        font-size: 16px;
+        gap: 10px;
+    }
+}

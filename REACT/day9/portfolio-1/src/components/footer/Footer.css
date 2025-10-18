@@ -1,0 +1,279 @@
+/* src/components/footer/Footer.css */
+
+.footer {
+    /* Mapped to d-flex, flex-column, gap-4 (roughly) */
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Custom spacing */
+    margin: 80px 70px; /* Custom outer margin */
+}
+
+.footer-top {
+    /* Mapped to d-flex, justify-content-between, align-items-start */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px; /* Custom column gap */
+}
+
+.footer-top-left img {
+    width: 150px;
+    margin-bottom: 15px; /* Mapped to mb-3 */
+}
+
+.footer-top-left p {
+    /* Mapped to lead (for size), text-secondary (for color) */
+    font-size: 20px;
+    max-width: 400px;
+    color: #d8d8d8;
+    line-height: 32px;
+}
+
+.footer-top-right {
+    /* Mapped to d-flex, align-items-center, gap-4 */
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-email-input {
+    /* Mapped to d-flex, gap-3, p-3, bg-dark (roughly), rounded-pill */
+    display: flex;
+    gap: 20px;
+    padding: 20px 30px;
+    border-radius: 50px;
+    background: #32323b; /* Custom dark background */
+    padding-right: 80px; /* Custom spacing adjustment */
+    align-items: center;
+    transition: 0.3s;
+}
+
+.footer-email-input input {
+    /* Mapped to form-control-plaintext, text-light */
+    outline: none;
+    border: none;
+    background: transparent;
+    color: #d8d8d8;
+    font-size: 16px;
+    width: 200px;
+}
+
+.footer-email-input img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-subscribe {
+    /* Mapped to btn, rounded-pill */
+    font-size: 20px;
+    padding: 22px 50px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #df8908 -5.09%, #b415ff 106.28%);
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.footer-subscribe:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.footer-email-input:hover {
+    /* Mapped to border border-white */
+    border: 2px solid white;
+}
+
+hr {
+    /* Mapped to border-secondary, border-1 */
+    border: 1px solid #444;
+}
+
+.footer-bottom {
+    /* Mapped to d-flex, justify-content-between, flex-wrap */
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #d8d8d8; /* Mapped to text-secondary */
+    flex-wrap: wrap;
+    gap: 20px; /* Custom gap */
+}
+
+.footer-bottom-left {
+    flex: 1;
+}
+
+.footer-bottom-right {
+    /* Mapped to d-flex, gap-5 */
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px; /* Custom margin */
+    flex-wrap: wrap;
+}
+
+.footer-bottom-right p {
+    cursor: pointer;
+}
+
+.footer-bottom-right p:hover {
+    color: #df8908;
+    transition: 0.3s;
+}
+
+/* ---------------------------------- */
+/* 📱 Responsive Design Section */
+/* ---------------------------------- */
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+    .footer {
+        margin: 60px 40px;
+    }
+
+    .footer-top {
+        /* Mapped to flex-column */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+    }
+
+    .footer-top-left p {
+        font-size: 18px;
+        max-width: 100%;
+    }
+
+    .footer-top-right {
+        /* Mapped to w-100, flex-column, align-items-start */
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .footer-email-input {
+        width: 100%; /* Mapped to w-100 */
+        padding: 15px 25px;
+        padding-right: 60px;
+    }
+
+    .footer-email-input input {
+        width: 100%; /* Mapped to w-100 */
+    }
+
+    .footer-subscribe {
+        padding: 18px 40px;
+        font-size: 18px;
+    }
+
+    .footer-bottom {
+        /* Mapped to flex-column, align-items-start */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .footer-bottom-right {
+        gap: 25px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+    .footer {
+        margin: 50px 25px;
+        gap: 25px;
+    }
+
+    .footer-top-left img {
+        width: 120px;
+    }
+
+    .footer-top-left p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .footer-top-right {
+        gap: 15px;
+    }
+
+    .footer-email-input {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 12px 20px;
+        border-radius: 40px;
+    }
+
+    .footer-email-input input {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .footer-subscribe {
+        font-size: 16px;
+        padding: 15px 35px;
+    }
+
+    .footer-bottom {
+        font-size: 16px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-bottom-right {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+}
+
+/* Small Mobile (<= 480px) */
+@media (max-width: 480px) {
+    .footer {
+        margin: 40px 20px;
+        gap: 20px;
+    }
+
+    .footer-top-left img {
+        width: 100px;
+    }
+
+    .footer-top-left p {
+        font-size: 14px;
+    }
+
+    .footer-email-input {
+        /* This switches the input field to stack vertically with the icon/label on smaller screens */
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .footer-email-input input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .footer-subscribe {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .footer-bottom-right {
+        flex-direction: column;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+}
