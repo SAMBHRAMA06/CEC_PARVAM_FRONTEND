@@ -4,7 +4,6 @@ import { TodoInput } from "./components/TodoInput";
 import { TodoList } from "./components/TodoList";
 import { FaListUl } from "react-icons/fa";
 
-
 function App() {
   const getInitialTodos = () => {
     const storedTodos = localStorage.getItem("todos");
@@ -13,11 +12,9 @@ function App() {
   };
   const [todos, setTodos] = useState(getInitialTodos);
 
-
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
-
 
   const addTodo = (text) => {
     if (!text.trim()) return;
@@ -29,7 +26,6 @@ function App() {
     setTodos([newTodo, ...todos]);
   };
 
-
   const toggleTodo = (id) => {
     setTodos(
       todos.map((todo) =>
@@ -38,15 +34,13 @@ function App() {
     );
   };
 
-
   const deleteTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
-
   return (
     <div className="container py-5 text-white">
-      <h2 className="text-center mb-4 d-flex align-items-center justify-content-center gap-4">
+      <h2 className="text-dark text-center mb-4 d-flex align-items-center justify-content-center gap-4">
         <span>Rect Bootstrap Todo App</span> <FaListUl className="mt-2" />
       </h2>
       <TodoInput addTodo={addTodo} />
@@ -54,6 +48,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;

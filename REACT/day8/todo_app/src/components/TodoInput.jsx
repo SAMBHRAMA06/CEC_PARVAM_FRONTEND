@@ -1,7 +1,5 @@
-
 import React, { useState } from "react";
 import { FaPlus } from "react-icons/fa";
-
 
 export const TodoInput = ({ addTodo }) => {
   const [text, setText] = useState("");
@@ -19,7 +17,10 @@ export const TodoInput = ({ addTodo }) => {
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <button className="btn btn-primary d-flex align-items-center" type="submit">
+      <button
+        className="btn btn-primary d-flex align-items-center"
+        type="submit"
+      >
         <FaPlus className="me-2" />
         Add
       </button>

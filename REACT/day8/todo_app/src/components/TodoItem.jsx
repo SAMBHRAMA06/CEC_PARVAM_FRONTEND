@@ -1,7 +1,6 @@
 import React from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
-
 export const TodoItem = ({ todo, toggleTodo, deleteTodo }) => {
   console.log("1234rfds", todo);
   return (
@@ -28,7 +27,7 @@ export const TodoItem = ({ todo, toggleTodo, deleteTodo }) => {
           deleteTodo(todo.id);
         }}
       >
-        <FaTrashAlt/>
+        <FaTrashAlt />
         Delete
       </button>
     </li>
