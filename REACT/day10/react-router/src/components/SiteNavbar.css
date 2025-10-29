@@ -1,0 +1,39 @@
+.custom-navbar {
+    transition: all 0.3s ease;
+}
+
+.custom-navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+}
+
+.brand-text {
+    letter-spacing: 1px;
+}
+
+.nav-item-custom {
+    color: #212529 !important;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-item-custom:hover {
+    color: #0d6efd !important;
+}
+
+.nav-item-custom.active {
+    color: #0d6efd !important;
+}
+
+.nav-item-custom.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    height: 2px;
+    background-color: #0d6efd;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}

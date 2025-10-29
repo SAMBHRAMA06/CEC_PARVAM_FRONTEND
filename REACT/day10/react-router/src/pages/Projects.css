@@ -1,0 +1,60 @@
+.projects-page {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* === Hero Section === */
+.projects-hero {
+  background: linear-gradient(135deg, #0d6efd, #004aad);
+  color: #fff;
+}
+
+.projects-hero h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* === Project Cards === */
+.project-card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.project-img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+
+/* === Status Badge === */
+.status-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 0.75rem;
+  border-radius: 20px;
+  padding: 5px 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.status-live {
+  background-color: #d1e7dd !important;
+  color: #0f5132 !important;
+}
+
+.status-pilot {
+  background-color: #fff3cd !important;
+  color: #664d03 !important;
+}
+
+.status-delivered {
+  background-color: #cfe2ff !important;
+  color: #084298 !important;
+}

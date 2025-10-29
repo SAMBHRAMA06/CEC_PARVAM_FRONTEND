@@ -1,0 +1,85 @@
+/* ===== About Page Styling ===== */
+
+.about-page {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Hero Section */
+.about-hero {
+    background: linear-gradient(135deg, #0d6efd, #004aad);
+    padding: 100px 0;
+    color: #fff;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+}
+
+.hero-subtitle {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    color: #eaeaea;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-left: 4px solid #0d6efd;
+    padding-left: 12px;
+}
+
+/* Company Info */
+.about-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-list li {
+    margin-bottom: 8px;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Mission Card */
+.mission-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Team Cards */
+.team-card {
+    transition: all 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+}

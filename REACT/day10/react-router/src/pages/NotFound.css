@@ -1,0 +1,79 @@
+/* ===== Not Found Page Styling ===== */
+.notfound-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0d6efd, #004aad);
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.error-icon {
+    font-size: 4rem;
+    color: #ffc107;
+    animation: bounce 1.5s infinite;
+}
+
+.error-code {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+}
+
+.error-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+button.btn-primary {
+    background-color: #fff !important;
+    color: #0d6efd !important;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #004aad !important;
+    color: #fff !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .error-code {
+        font-size: 4rem;
+    }
+
+    .error-title {
+        font-size: 1.4rem;
+    }
+
+    .error-icon {
+        font-size: 3rem;
+    }
+}

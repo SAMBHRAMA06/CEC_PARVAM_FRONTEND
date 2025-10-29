@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(135deg, #87ceeb, #f0f8ff);
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.weather-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.weather-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}

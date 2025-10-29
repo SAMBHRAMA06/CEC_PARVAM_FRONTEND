@@ -1,0 +1,50 @@
+.careers-page {
+    font-family: "Poppins", sans-serif;
+    background-color: #f8f9fa;
+}
+
+.careers-hero {
+    background: linear-gradient(135deg, #0d6efd 0%, #004aad 100%);
+    color: #fff;
+}
+
+.section-title {
+    font-weight: 700;
+    color: #212529;
+}
+
+.career-card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.career-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.apply-btn {
+    border-radius: 25px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+    background-color: #0d6efd;
+    color: #fff;
+    border-color: #0d6efd;
+}
+
+.careers-footer {
+    background: #0d6efd;
+}
+
+.careers-footer h3 {
+    font-size: 1.75rem;
+}
+
+.careers-footer p {
+    color: rgba(255, 255, 255, 0.85);
+}

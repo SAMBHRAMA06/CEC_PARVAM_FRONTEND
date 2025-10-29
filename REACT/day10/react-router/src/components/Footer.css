@@ -1,0 +1,60 @@
+.footer {
+    background: linear-gradient(180deg, #0d6efd 0%, #012a68 100%);
+    color: #fff;
+    font-size: 0.95rem;
+}
+
+.footer h5,
+.footer h6 {
+    letter-spacing: 0.5px;
+}
+
+.footer-links li {
+    margin-bottom: 6px;
+}
+
+.footer-links a {
+    color: #d9e2ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #ffffffcc;
+    margin-right: 12px;
+    font-size: 1.25rem;
+    transition: color 0.3s ease, transform 0.2s;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.footer input.form-control {
+    border-radius: 50px;
+    border: none;
+    padding: 0.6rem 1rem;
+}
+
+.footer button {
+    border-radius: 50px;
+    font-weight: 600;
+    padding: 0.6rem 1.25rem;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        display: flex;
+    }
+}
